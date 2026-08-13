@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Ejercicio1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio 1: Promedio de Estudiante"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNombreEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del estudiante"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNota1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 1 (0.00 - 10.00)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNota2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 2 (0.00 - 10.00)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNota3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 3 (0.00 - 10.00)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNota4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 4 (0.00 - 10.00)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNota5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota 5 (0.00 - 10.00)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCalcularPromedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular Promedio"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoPromedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado: Esperándote..."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
