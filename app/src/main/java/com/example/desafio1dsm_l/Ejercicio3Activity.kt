@@ -73,6 +73,12 @@ class Ejercicio3Activity : AppCompatActivity() {
             }
             val res = nums.first / nums.second
             tvResultado.text = "Resultado: ${nums.first} ÷ ${nums.second} = $res"
+
+            val btnRegresar = findViewById<Button>(R.id.btnRegresar3)
+            btnRegresar.setOnClickListener {
+                finish()
+            }
+
         }
     }
 }

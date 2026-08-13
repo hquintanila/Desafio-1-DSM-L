@@ -24,6 +24,10 @@ class Ejercicio1Activity : AppCompatActivity() {
         val etNota5 = findViewById<EditText>(R.id.etNota5)
         val btnCalcular = findViewById<Button>(R.id.btnCalcularPromedio)
         val tvResultado = findViewById<TextView>(R.id.tvResultadoPromedio)
+        val btnRegresar = findViewById<Button>(R.id.btnRegresar1)
+        btnRegresar.setOnClickListener {
+            finish()
+        }
 
         btnCalcular.setOnClickListener {
             val nombre = etNombre.text.toString().trim()
@@ -33,7 +37,7 @@ class Ejercicio1Activity : AppCompatActivity() {
             val str4 = etNota4.text.toString().trim()
             val str5 = etNota5.text.toString().trim()
 
-            // 1. EN ESTE APARTADO Validamos los campos Vacíos
+            // 1. EN ESTE APARTADO Validamos los Campos Vacíos
             if (nombre.isEmpty() || str1.isEmpty() || str2.isEmpty() || str3.isEmpty() || str4.isEmpty() || str5.isEmpty()) {
                 Toast.makeText(this, "Por Favor Completa Todos Los Campos", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -50,13 +54,13 @@ class Ejercicio1Activity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // 2. Validar rango de notas (0.00 a 10.00)
+            // 2. Validar Rango de Notas ENTRE (0.00 a 10.00)
             if (n1 !in 0.0..10.0 || n2 !in 0.0..10.0 || n3 !in 0.0..10.0 || n4 !in 0.0..10.0 || n5 !in 0.0..10.0) {
                 Toast.makeText(this, "Las Notas Deben Estar Entre 0.00 y 10.00", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            // 3. Cálculo del promedio ponderado (20% cada nota)
+            // 3. Cálculo del Promedio Ponderado (20% Cada Nota)
             val promedio = (n1 * 0.20) + (n2 * 0.20) + (n3 * 0.20) + (n4 * 0.20) + (n5 * 0.20)
             val estado = if (promedio >= 6.0) "APROBADO" else "REPROBADO"
 

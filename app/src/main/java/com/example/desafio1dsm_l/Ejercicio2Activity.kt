@@ -20,6 +20,10 @@ class Ejercicio2Activity : AppCompatActivity() {
         val etSalario = findViewById<EditText>(R.id.etSalarioBase)
         val btnCalcular = findViewById<Button>(R.id.btnCalcularSalario)
         val tvResultado = findViewById<TextView>(R.id.tvResultadoSalario)
+        val btnRegresar = findViewById<Button>(R.id.btnRegresar2)
+        btnRegresar.setOnClickListener {
+            finish()
+        }
 
         btnCalcular.setOnClickListener {
             val nombre = etNombre.text.toString().trim()
@@ -36,13 +40,13 @@ class Ejercicio2Activity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // 1. Cálculo de ISSS (3%, tope máximo de $30.00)
+            // 1. Cálculo de ISSS (3%, tope Máximo de $30.00)
             val isss = if (salarioBase * 0.03 > 30.0) 30.0 else salarioBase * 0.03
 
             // 2. Cálculo de AFP (7.25%)
             val afp = salarioBase * 0.0725
 
-            // Salario imponible sobre el cual se calcula la Renta
+            // Salario Disponible sobre el Cual se Calcula La Renta
             val salarioImponible = salarioBase - isss - afp
 
             // 3. Cálculo de Renta (Tramos ISR El Salvador)
@@ -59,7 +63,7 @@ class Ejercicio2Activity : AppCompatActivity() {
             val totalDescuentos = isss + afp + renta
             val salarioNeto = salarioBase - totalDescuentos
 
-            // 5. Mostrar resultados
+            // 5. Mostrar Resultados
             val resultado = "Empleado: $nombre\n\n" +
                     "Salario Base: $${String.format("%.2f", salarioBase)}\n" +
                     "Descuento ISSS (3%): $${String.format("%.2f", isss)}\n" +
