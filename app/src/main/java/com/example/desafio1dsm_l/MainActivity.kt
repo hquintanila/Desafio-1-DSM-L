@@ -1,12 +1,12 @@
 package com.example.desafio1dsm_l
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,10 +14,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Botón Ejercicio 1
         val btnEjercicio1 = findViewById<Button>(R.id.btnEjercicio1)
-
         btnEjercicio1.setOnClickListener {
             val intent = Intent(this, Ejercicio1Activity::class.java)
+            startActivity(intent)
+        }
+
+        // Botón Ejercicio 2
+        val btnEjercicio2 = findViewById<Button>(R.id.btnEjercicio2)
+        btnEjercicio2.setOnClickListener {
+            val intent = Intent(this, Ejercicio2Activity::class.java)
             startActivity(intent)
         }
     }
