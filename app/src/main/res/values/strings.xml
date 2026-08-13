@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">Desafio1DSM-L</string>
+    <string name="app_name">Desafío 1 De Harold - DSM-L</string>
+
+    <!-- Menú Principal -->
+    <string name="title_main">Desafío Práctico 1</string>
+    <string name="btn_ejercicio1">Ejercicio 1: Promedio Estudiante</string>
+    <string name="btn_ejercicio2">Ejercicio 2: Calculadora Salario</string>
+    <string name="btn_ejercicio3">Ejercicio 3: Calculadora Básica</string>
+
+    <!-- Ejercicio 1 -->
+    <string name="title_ejercicio1">Ejercicio 1: Promedio de Notas</string>
+    <string name="hint_nombre_estudiante">Nombre del Estudiante</string>
+    <string name="hint_nota1">Nota 1 (30%)</string>
+    <string name="hint_nota2">Nota 2 (30%)</string>
+    <string name="hint_nota3">Nota 3 (40%)</string>
+    <string name="btn_calcular_promedio">Calcular Promedio</string>
+
+    <!-- Ejercicio 2 -->
+    <string name="title_ejercicio2">Ejercicio 2: Calculadora de Salario Neto</string>
+    <string name="hint_nombre_empleado">Nombre Del Empleado</string>
+    <string name="hint_salario_base">Salario base ($)</string>
+    <string name="btn_calcular_salario">Calcular Salario Neto</string>
+
+    <!-- Ejercicio 3 -->
+    <string name="title_ejercicio3">Ejercicio 3: Calculadora Básica</string>
+    <string name="hint_numero1">Número 1</string>
+    <string name="hint_numero2">Número 2</string>
+
+    <!-- General -->
+    <string name="result_placeholder">Resultado: Esperándote...</string>
 </resources>
