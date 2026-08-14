@@ -96,12 +96,11 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnRegresar3"
-            android:layout_width="match_parent"
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regresar Al Menú"
-            android:layout_marginTop="16dp"
-            style="?attr/materialButtonOutlinedStyle" />
+            android:text="+"
+            android:backgroundTint="@color/ejercicio3Red" />
 
     </LinearLayout>
 </ScrollView>

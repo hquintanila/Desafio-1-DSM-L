@@ -9,11 +9,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Colores Personalizada para la App -->
+    <!-- Colores Personalizados para la App -->
     <color name="primaryColor">#1976D2</color>
     <color name="primaryDarkColor">#0D47A1</color>
     <color name="accentColor">#00BCD4</color>
     <color name="backgroundColor">#F5F5F5</color>
     <color name="cardBackground">#FFFFFF</color>
     <color name="textColorPrimary">#212121</color>
+
+    <!-- Colores de Ejercicios y Botones -->
+    <color name="ejercicio2Orange">#F57C00</color>
+    <color name="ejercicio3Red">#D32F2F</color>
+    <color name="btnReturnColor">#616161</color>
 </resources>
