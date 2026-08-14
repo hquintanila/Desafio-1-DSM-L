@@ -19,7 +19,13 @@ class Ejercicio3Activity : AppCompatActivity() {
         val btnResta = findViewById<Button>(R.id.btnResta)
         val btnMult = findViewById<Button>(R.id.btnMultiplicacion)
         val btnDiv = findViewById<Button>(R.id.btnDivision)
+        val btnRegresar = findViewById<Button>(R.id.btnRegresar3)
         val tvResultado = findViewById<TextView>(R.id.tvResultadoCalculadora)
+
+        // Evento para Regresar al Menú Principal (Ahora funciona desde el inicio)
+        btnRegresar.setOnClickListener {
+            finish()
+        }
 
         // Función para validar e ingresar los Diferentes Datos Ingresados
         fun obtenerNumeros(): Pair<Double, Double>? {
@@ -73,12 +79,6 @@ class Ejercicio3Activity : AppCompatActivity() {
             }
             val res = nums.first / nums.second
             tvResultado.text = "Resultado: ${nums.first} ÷ ${nums.second} = $res"
-
-            val btnRegresar = findViewById<Button>(R.id.btnRegresar3)
-            btnRegresar.setOnClickListener {
-                finish()
-            }
-
         }
     }
 }
