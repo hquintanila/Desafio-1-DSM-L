@@ -40,6 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calcular Salario Neto"
+            android:backgroundTint="@color/opcion2Cyan"
+            android:textColor="@color/white"
             android:layout_marginBottom="16dp" />
 
         <TextView
@@ -48,14 +50,16 @@
             android:layout_height="wrap_content"
             android:text="Resultado: Esperándote..."
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
         <Button
-            android:id="@+id/btnCalcular"
+            android:id="@+id/btnRegresar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calcular Salario"
-            android:backgroundTint="@color/ejercicio2Orange" />
+            android:text="Regresar al Menú"
+            android:backgroundTint="@color/btnReturnWhite"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 </ScrollView>

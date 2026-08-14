@@ -49,6 +49,8 @@
                 android:layout_weight="1"
                 android:text="+"
                 android:textSize="20sp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginEnd="4dp" />
 
             <Button
@@ -58,6 +60,8 @@
                 android:layout_weight="1"
                 android:text="-"
                 android:textSize="20sp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginStart="4dp" />
         </LinearLayout>
 
@@ -75,6 +79,8 @@
                 android:layout_weight="1"
                 android:text="×"
                 android:textSize="20sp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginEnd="4dp" />
 
             <Button
@@ -84,6 +90,8 @@
                 android:layout_weight="1"
                 android:text="÷"
                 android:textSize="20sp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginStart="4dp" />
         </LinearLayout>
 
@@ -93,14 +101,16 @@
             android:layout_height="wrap_content"
             android:text="Resultado: Esperándote..."
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
         <Button
-            android:id="@+id/btnCalcular"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnRegresar3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+"
-            android:backgroundTint="@color/ejercicio3Red" />
+            android:text="Regresar al Menú"
+            android:backgroundTint="@color/btnReturnWhite"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 </ScrollView>
